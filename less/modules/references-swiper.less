@@ -1,0 +1,85 @@
+.references-swiper-container {
+  //background: #002328;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (min-width: @sm) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media screen and (min-width: @md) {
+    font-size: 1.8rem;
+  }
+
+  .swiper-container {
+    padding-bottom: 5rem;
+  }
+
+  .swiper-pagination {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .swiper-pagination-bullet {
+      position: relative;
+      width: 16px;
+      height: 16px;
+      line-height: 2px;
+      border: 1px solid transparent;
+      background: transparent;
+      .transition(all 0.3s ease-in-out);
+
+      &:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: @grayLight;;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      @media screen and (max-width: @sm){
+        margin: 2px !important;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      border: 1px solid #fff;
+      &:before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -0.5rem;
+    @media screen and (min-width: @sm) {
+      right: 1rem;
+    }
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -0.5rem;
+    @media screen and (min-width: @sm) {
+      left: 1rem;
+    }
+  }
+  .swiper-wrapper {
+    align-items: center;
+  }
+  
+}
+
+.white-bg .references-swiper-container {
+  background: #fff;
+  color: @gray;
+}

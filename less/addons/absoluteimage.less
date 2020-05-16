@@ -1,0 +1,35 @@
+
+.sppb-addon-absolute-image {
+  position: relative;
+
+  img {
+    display: none;
+    max-height: 36rem;
+    width: 75%;
+    margin-top: -200px;
+    @media screen and (min-width: @lg){
+      display: block;
+    }
+    @media screen and (min-width: @lg){
+      position: absolute;
+      bottom: -12rem;
+      right: 0;
+      width: auto;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1400px){
+      max-height: 60rem;
+      //right: 15rem;
+    }
+  }
+}
+
+@media screen and (max-width: @lg - 1){
+  .mobile-reorder {
+    [class*="col-"]:last-child {
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1;
+    }
+  }
+}

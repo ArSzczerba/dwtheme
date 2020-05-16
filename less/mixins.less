@@ -1,0 +1,37 @@
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.btn-color(@primary) {
+  border-color: @primary;
+  color: @primary;
+  &:hover,
+  &:focus {
+    background: @primary;
+    color: #fff;
+  }
+}
+
+.cta-color(@color, @color2){
+  color: @color;
+  &:after {
+    background: @color;
+  }
+
+  .line {
+    background: @color;
+  }
+  
+  &:hover {
+    color: @color;
+  }
+
+  &:active {
+    color: @color2 !important;
+    background: @color;
+  }
+}

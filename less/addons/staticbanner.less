@@ -1,0 +1,50 @@
+.staticbanner {
+  height: 50vh;
+  @media (min-width: @sm) {
+      height: 360px;
+  }
+  @media (min-width: 1400px) {
+    height: 480px;
+}
+  .mainbg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.25;
+      background-position: top !important;
+      background-repeat: no-repeat !important;
+      //background-attachment: fixed !important;
+      transform: translate(0,0);
+      background-size: cover !important;
+      
+      @media (min-width: 1921px) {
+          background-size: cover !important;
+          background-position: center !important;
+      }
+  }
+
+  h2 {
+      font-size: 3.4rem;
+      font-weight: 700;
+      //letter-spacing: -0.1rem;
+  }
+
+  i {
+      display:inline-block;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      margin: 0 0 0 0.1rem;
+  }
+
+  p {
+      font-size: 1.6rem;
+      //letter-spacing: -0.1rem;
+  }
+  .container {
+      z-index: 5;
+  }
+}

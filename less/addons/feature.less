@@ -1,0 +1,45 @@
+.sppb-addon-feature.image--left {
+  .sppb-addon-content {
+    display: flex;
+  }
+
+  .sppb-img-container {
+    margin-right: 2rem;
+    img {
+      min-width: 11.5rem;
+    }
+  }
+
+  p {
+    @media screen and (min-width: @lg){
+      // font-size: 3.2rem;
+      // line-height: 3.8rem;
+    }
+    
+  }
+
+  &.lead {
+    @media screen and (min-width: @xl){
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+    @media screen and (min-width: 1600px){
+      font-size: 2.6rem;
+      line-height: 3rem;
+    }
+    
+  }
+}
+
+.sppb-addon-feature.image--left {
+  padding: 0;
+  @media screen and (min-width: 1600px){
+    padding: 0 10rem;
+  }
+  &.no-padding {
+    @media screen and (min-width: 1600px){
+      padding: 0 0rem;
+    }
+  }
+}
+

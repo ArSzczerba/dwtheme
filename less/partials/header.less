@@ -1,0 +1,251 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  .transition(all 0.35s ease-in-out);
+
+  .header-inner {
+    .transition(all 0.15s ease-in-out);
+    padding-bottom: 5rem;
+  }
+
+  &.sticky {
+    max-width: 100%;
+    background: #fff;
+   
+    padding-top: 0rem;
+    .header-inner {
+      padding-bottom: 0;
+    }
+  }
+
+  
+}
+
+// BRAND
+.brand path {
+  fill: @gray;
+  //fill: #fff;
+}
+
+.design {
+  .brand path {
+    fill: #fff;
+  }
+  @media screen and (min-width: @md){
+    .brand path {
+      fill: @design;
+    }
+  }
+  .sticky {
+    .brand path {
+      fill: @design;
+    }
+  }
+}
+
+&.web {
+  .brand path {
+    fill: #fff;
+  }
+  @media screen and (min-width: @md){
+    .brand path {
+      fill: @web;
+    }
+  }
+  .sticky {
+    .brand path {
+      fill: @web;
+    }
+  }
+}
+.illustration {
+  .brand path {
+    fill: #fff;
+  }
+  @media screen and (min-width: @md){
+    .brand path {
+      fill: @illustration;
+    }
+  }
+  .sticky {
+    .brand path {
+      fill: @illustration;
+    }
+  }
+}
+.promotional {
+  .brand path {
+    fill: #fff;
+  }
+  @media screen and (min-width: @md){
+    .brand path {
+      fill: @promotional;
+    }
+  }
+  .sticky {
+    .brand path {
+      fill: @promotional;
+    }
+  }
+}
+
+.brand {
+  display: inline-block;
+}
+
+.brand svg {
+  .transition(all 0.3s ease-in-out);
+  height: 4rem;
+
+  @media (min-width: @md) {
+    height: 4.8rem;
+  }
+}
+
+.brand svg path {
+  .transition(all 0.3s ease-in-out);
+}
+
+.dw-menu {
+  margin-right: 2.4rem;
+}
+
+// TOGGLER
+.navbar-toggler {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-toggler {
+  display: inline-block;
+  width: 3rem;
+  height: 1.7rem;
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    background: @gray;
+    //background: #fff;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+  }
+
+  span:first-child {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    top: 0;
+  }
+
+  span:nth-child(2) {
+    top: 0.7rem;
+    left: 0;
+    width: 2.3rem;
+  }
+
+  &:hover {
+    span:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  span:last-child {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    bottom: 0;
+  }
+
+  &.active {
+    span {
+      background: @primaryColor !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: inherit;
+    }
+    span:first-child {
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:last-child {
+      -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.design {
+  .navbar-toggler span {
+    background: #fff;
+  }
+  @media screen and (min-width: @md){
+    .navbar-toggler span {
+      background: @design;
+    }
+  }
+  .sticky {
+    .navbar-toggler span {
+      background: @design;
+    }
+  }
+}
+
+&.web {
+  .navbar-toggler span {
+    background: #fff;
+  }
+  @media screen and (min-width: @md){
+    .navbar-toggler span {
+      background: @web;
+    }
+  }
+  .sticky {
+    .navbar-toggler span {
+      background: @web;
+    }
+  }
+}
+.illustration {
+  .navbar-toggler span {
+    background: #fff;
+  }
+  @media screen and (min-width: @md){
+    .navbar-toggler span {
+      background: @illustration;
+    }
+  }
+  .sticky {
+    .navbar-toggler span {
+      background: @illustration;
+    }
+  }
+}
+.promotional {
+  .navbar-toggler span {
+    background: #fff;
+  }
+  @media screen and (min-width: @md){
+    .navbar-toggler span {
+      background: @promotional;
+    }
+  }
+  .sticky {
+    .navbar-toggler span {
+      background: @promotional;
+    }
+  }
+}

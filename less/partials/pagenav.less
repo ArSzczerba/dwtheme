@@ -1,0 +1,54 @@
+.pagenav {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+
+  li {
+    min-width: 8rem;
+  }
+
+  a {
+    color: @grayDarker;
+    &:hover {
+      color: @dw;
+    }
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+}
+
+.pager {
+  .socialshare {
+    a {
+      color: @gray;
+      font-size: 3.5rem;
+      &:hover {
+        color: @dw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @sm){
+  .pagenav {
+    flex-wrap: wrap;
+    
+    li.socialshare {
+      width: 100%;
+      order: 1;
+      margin-bottom: 3rem;
+    }
+    li.previous {
+      order: 2;
+      width: 50%;
+    }
+    li.next {
+      order: 3;
+      width: 50%;
+      text-align: right;
+    }
+  }
+}

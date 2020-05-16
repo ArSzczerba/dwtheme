@@ -1,0 +1,89 @@
+.rsform {
+  .dw-form {
+    .formRequired{
+      display: none;
+    } 
+
+    #g-recaptcha-113 {
+      > div {
+        margin: auto;
+      }
+    }
+
+    .rsform-block-submit {
+      text-align: center;
+    }
+  }
+
+  // remove labels
+  .rsform-block-project-details,
+  .rsform-block-name,
+  .rsform-block-your-name,
+  .rsform-block-email,
+  .rsform-block-telephone,
+  .rsform-block-company,
+  .rsform-block-quantity,
+  .rsform-block-sizes,
+  .rsform-block-color,
+  .rsform-block-product,
+  .rsform-block-decoration,
+  .rsform-block-recaptcha-v2,
+  .rsform-block-submit,
+  .rsform-block-other {
+    label {
+      display: none;
+    }
+  }
+
+  .rsform-block-design {
+    display: flex;
+    label {
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.dw-form select.form-control:not([size]):not([multiple]) {
+  height: 3.3rem;
+}
+
+.dw-form .form-group {
+  margin-bottom: 1.6rem;
+}
+
+.dw-form .form-control {
+  border-radius: 0;
+  border: 0;
+}
+
+.dw-form .addrow a {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.dw-form button[type="submit"]{
+  background: transparent;
+  font-size: 2.2rem;
+  color: #fff;
+  border: 2px solid#fff;
+}
+
+.dw-form button[type="submit"]:hover{
+  background: #fff;
+  font-size: 2.2rem;
+  color: #54a3b3;
+  border: 2px solid#fff;
+}
+
+.dw-form .line-separator {
+  width: 16rem;
+  height: 2px;
+  background-color: #fff;
+  margin: 3.5rem auto;
+}
+
+.dw-form .formValidation {
+  color: #CF4D4D;
+  font-weight: bold;
+  font-size: 10px;
+}

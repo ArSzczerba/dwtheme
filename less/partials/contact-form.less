@@ -1,0 +1,30 @@
+.form-control {
+  font-size: 1.6rem;
+}
+
+.contact-form {
+  strong.formRequired {
+    display: none;
+  }
+
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  button:not(:disabled) {
+    background: transparent;
+    font-size: 2.2rem;
+    color: #54A3B3;
+    border: 2px solid #54A3B3;
+    &:hover {
+      background: #54A3B3;
+      color: #fff;
+    }
+  }
+
+  .col-6 {
+    @media screen and (max-width: @sm - 1) {
+      max-width: 100%;      
+      flex: 0 0 100%;
+    }
+  }
+}

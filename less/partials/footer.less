@@ -1,0 +1,47 @@
+footer {
+  background: @greenDark;
+  color: #fff;
+  padding: 5rem 0;
+  .container >* {
+    margin-bottom: 4rem;
+  }
+  .brand {
+    path {
+      fill :#fff !important;
+    }
+  }
+  .social-media {
+    a {
+      color: #fff;
+      font-size: 3rem;
+      margin: 0 1rem;
+    }
+  }
+
+  .moduletable {
+    margin: 0;
+  }
+
+  ul {
+    justify-content: center;
+    li {
+      a {
+        color: #fff;
+        margin: 0 0.5rem;
+      }
+    }
+
+    li + li {
+      &:before {
+        content: "/";
+        color: @dw;
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      color: @primaryColor;
+    }
+  }
+}

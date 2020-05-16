@@ -1,0 +1,36 @@
+.input-group.search {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  padding: 0.4rem;
+
+  .form-control {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: #5d5d5d;
+    padding: 2rem 3rem;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .btn-primary {
+    font-size: 1.8rem;
+    min-width: 6rem;
+  }
+
+  .btn-primary {
+    border: 0;
+    background: @dw;
+    border-radius: 0;
+    border-color: #e4e4e4;
+    border-left: 0;
+    &:hover,
+    &:active {
+      background: darken(@dw, 20%) !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}

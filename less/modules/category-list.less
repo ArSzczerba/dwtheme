@@ -1,0 +1,58 @@
+.categories-module.mod-list {
+  background: #fff;
+  list-style: none;
+  padding: 0;
+
+  li + li {
+    border-top: 1px solid @grayLighter;
+  }
+
+  li {
+    position: relative;
+    h4 {
+      margin: 0;
+    }
+    a {
+      display: block;
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      color: @gray;
+      padding: 2.5rem 3rem;
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+      content: "\f105 ";
+      font-family: FontAwesome;
+      font-size: 2rem;
+    }
+    &.active {
+      color: @dw;
+      a {
+        color: @dw;
+      }
+    }
+  }
+}
+
+.remove-filters {
+  @media screen and (min-width: @xl){
+    align-self: flex-start;
+  }
+}
+
+.remove-filters {
+  border: 1px solid @dw;
+  border-radius: 4rem;
+  padding: 0.25rem 1rem;
+  font-size: 1.2rem;
+  color: @dw;
+  &:hover {
+    background: @dw;
+    color: #fff;
+  }
+}

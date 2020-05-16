@@ -1,0 +1,59 @@
+// .dw-megamenu {
+//   display: block;
+//   column-count: 1;
+//   font-size: 2rem;
+//   font-weight: 600;
+//   @media screen and (min-width: @md){
+//     column-count: 2;
+//     font-size: 2.6rem;
+//   }
+//   @media screen and (min-width: @lg){
+//     column-count: 3;
+//     font-size: 2.4rem;
+//   }
+// }
+.dw-megamenu {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 600;
+  @media screen and (min-width: @md){
+    height: 20rem;
+    font-size: 2.6rem;
+  }
+  @media screen and (min-width: @lg){
+    height: 17rem;
+    font-size: 2.4rem;
+
+  }
+}
+.dw-megamenu {
+  @media screen and (min-width: @md){
+    margin: 0 -1.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    @media screen and (min-width: @md){
+      width: 33%;
+      padding: 0 1.5rem;
+    }
+  }
+
+  li {
+    animation-name: fadeInLeft;
+  }
+
+  a {
+    //color: #7e8689;
+    color: #8E9191;
+    transition: 0.3s;
+    &:hover {
+      color: @primaryColor;
+    }
+  }
+  
+}

@@ -1,0 +1,33 @@
+.logos-swiper-container {
+  position: relative;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+  .swiper-container {
+    .swiper-slide {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: unset !important;
+  font-size: 3rem;
+  text-align: center;
+  &:after {
+    content: "\f054";
+    font-family: FontAwesome;
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: unset !important;
+  font-size: 3rem;
+  text-align: center;
+  &:after {
+    content: "\f053";
+    font-family: FontAwesome;
+  }
+}

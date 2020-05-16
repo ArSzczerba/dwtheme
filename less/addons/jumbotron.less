@@ -1,0 +1,172 @@
+.sppb-addon-jumbotron {
+  position: relative;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  @media screen and (min-width: @md) {
+    padding-top: 25rem;
+    padding-bottom: 15rem;
+    min-height: 80rem;
+  }
+
+  &.contact {
+    @media screen and (min-width: @md) {
+      padding-top: 20rem;
+      height: 80rem;
+      min-height: 100vh;
+    }
+    @media screen and (min-width: @xl) {
+      padding-top: 15rem;
+    }
+  }
+
+  .sppb-btn-cta {
+    margin-right: 1.5rem;
+  }
+}
+
+.sppb-addon-jumbotron {
+  background: none;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-attachment: fixed;
+  background-position: top center;
+  //background-size: contain;
+  //background-size: cover;
+  @media screen and (min-width: 1920px) {
+    background-size: inherit;
+    background-position: top right;
+  }
+}
+
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) and (max-width: @md - 1) {
+  .sppb-addon-jumbotron {
+    background: none !important;
+    background-color: #fff !important;
+  }
+}
+
+.sppb-addon-jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbotron.work {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.sppb-addon-jumbotron {
+  .container {
+    z-index: 2;
+  }
+
+  .container {
+    text-align: center;
+
+    @media screen and (min-width: @md) {
+      text-align: left;
+    }
+  }
+
+  .jumbotron-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1600px) {
+      background-position: bottom left;
+    }
+    @media screen and (min-width: 1920px) {
+      background-size: cover;
+      background-position: bottom center;
+    }
+  }
+}
+
+.sppb-addon-jumbotron {
+  h2 br {
+    @media screen and (min-width: @md) {
+      display: none;
+    }
+  }
+}
+
+.jumbotron.work {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+
+.jumbotron.work {
+  min-height: 50vh;
+  background: transparent;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: auto 50vh;
+  @media screen and (min-width: @md) {
+    height: 70rem;
+    min-height: 70vh;
+    //background-size: auto 70rem;
+    //background-size: 100vw auto;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1921px) {
+    background-size: cover !important;
+    background-position: top right;
+  }
+}
+
+.jumbotron.work {
+  h1 {
+    font-weight: 700;
+  }
+}
+
+.sppb-addon-jumbotron {
+  a[href^="tel"] {
+    color: @dw;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sppb-addon-jumbotron {
+  .sppb-addon-video-local-video-wrap {
+    .sppb-addon-video-local-source {
+      object-fit: cover;
+    }
+    &:after {
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: fade(@dw, 60%);
+      position: absolute;
+    }
+  }
+  &.web {
+    .sppb-addon-video-local-video-wrap {
+      &:after {
+        background: fade(@web, 60%);
+      }
+    }
+  }
+}
